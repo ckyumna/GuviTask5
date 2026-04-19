@@ -5,4 +5,5 @@ list1 = [{'name':'yumna','age':25}, {'name':'alice', 'age':20}, {'name':'bob', '
 
 list2 = list(filter(lambda item: item['age'] >=18, list1))
 
-print(list2)
+names= list(map(lambda item: item['name'], list2))
+print(names)
